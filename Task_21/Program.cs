@@ -13,7 +13,7 @@ namespace Task_21
         static int width;
         static int[,] garden;
 
-        public static void gardener_1()
+        public static void gardner_1()
         {
             for (int i = 0; i < width; i++)
             {
@@ -28,7 +28,7 @@ namespace Task_21
             }
         }
 
-        public static void gardener_2()
+        public static void gardner_2()
         {
             for (int i = length - 1; i >= 0; i--)
             {
@@ -52,10 +52,10 @@ namespace Task_21
 
             garden = new int[width, length];
 
-            ThreadStart thread_start = new ThreadStart(gardener_1);
+            ThreadStart thread_start = new ThreadStart(gardner_1);
             Thread my_thread = new Thread(thread_start);
             my_thread.Start();
-            gardener_2();
+            gardner_2();
 
             for (int i = 0; i < width; i++)
             {
