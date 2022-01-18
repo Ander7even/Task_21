@@ -61,7 +61,7 @@ namespace Task_21
             {
                 for (int j = 0; j < length; j++)
                 {
-                    Console.Write(garden[i, j] + "");
+                    Console.Write(garden[i, j] + " ");
                 }
                 Console.WriteLine();
             }
